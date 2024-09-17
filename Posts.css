@@ -1,0 +1,122 @@
+/* Container for the entire posts section */
+.posts-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.posts-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Button for toggling the form */
+.posts-container button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.posts-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the post creation form */
+.create-post {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Textarea styling */
+.create-post textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  resize: none;
+  height: 80px;
+}
+
+/* File input styling */
+.create-post input[type="file"] {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Post card styling */
+.post {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Post text styling */
+.post p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Post image styling */
+.post img {
+  margin-top: 10px;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .posts-container {
+    padding: 15px;
+  }
+
+  .posts-container h1 {
+    font-size: 20px;
+  }
+
+  .posts-container button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .create-post textarea {
+    font-size: 14px;
+    height: 60px;
+  }
+
+  .post {
+    padding: 12px;
+  }
+
+  .post p {
+    font-size: 14px;
+  }
+}

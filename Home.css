@@ -1,0 +1,59 @@
+/* CSS for Home Component */
+#nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  #nav button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Some padding */
+    border: none; /* Remove borders */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer/hand icon */
+    transition: background-color 0.3s ease;
+  }
+  
+  #nav button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  #nav a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from the button */
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; /* Center the image horizontally */
+    border-radius: 10px; /* Optional: Rounded corners for the image */
+  }
+  
+  /* Responsive design for small screens */
+  @media (max-width: 768px) {
+    #nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #nav button {
+      width: 100%; /* Full-width buttons */
+      margin-bottom: 10px; /* Space between buttons */
+    }
+  
+    img {
+      width: 80%; /* Reduce image size on smaller screens */
+    }
+  }
+  
+  /* Extra small screens */
+  @media (max-width: 480px) {
+    img {
+      width: 100%; /* Image takes full width on very small screens */
+    }
+  }
+  
